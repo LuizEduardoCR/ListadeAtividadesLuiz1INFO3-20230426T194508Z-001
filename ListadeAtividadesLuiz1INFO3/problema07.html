@@ -1,0 +1,18 @@
+<script>
+/*Problema 07: Gorjeta
+Peça para o usuário informar qual foi o preço do jantar. Calcule 10% da gorjeta e apresente o preço total que deverá pagar para o restaurante e apresente o resultado.
+*/
+//ENTRADA
+const valorjantar = prompt ("insira o valor do jantar:");
+const porcentagem = 10
+
+//PROCESSAMENTO
+const multiplicacao = Number(valorjantar) * Number(porcentagem);
+const divisao = multiplicacao/100;
+
+//SAIDA
+const gorgeta = Number(valorjantar)+divisao;
+alert (`o valor total somando o jantar e a gorgeta é ${gorgeta}`);
+
+
+</script>

@@ -1,0 +1,19 @@
+<script>
+/*
+Problema 04: Aumento Salarial
+Peça para o usuário informar o salário atual e a porcentagem de aumento. Faça o cálculo do salário final após o aumento baseado na porcentagem informada e apresente o resultado.
+*/
+
+
+//ENTRADA
+const salario = prompt(`insira o seu salario`);
+const aumento = prompt(`insira a porcentagem do aumento`);
+
+//PROCESSAMENTO
+const multiplicacao= Number(salario)*Number(aumento);
+const divisao=multiplicacao/100
+
+//SAIDA
+const salariofinal= Number(salario)+divisao
+alert (`o valor do salario com aumento e de ${salariofinal} reais.`)
+</script>

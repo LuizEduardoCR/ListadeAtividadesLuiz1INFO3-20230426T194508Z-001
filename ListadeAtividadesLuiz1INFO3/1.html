@@ -1,0 +1,17 @@
+<script>
+    const data= prompt("informe a data no formato dd/MM/aaaa:");
+    const hora=prompt("insira a hora no formato hh:mm:ss");
+
+
+const dias= Number(data.substr(0,2));
+const meses= Number(data.substr(3,2))-1;
+const anos= Number(data.substr(6,4))-1;
+const horas= Number(hora.substr(0,2));
+const minutos=Number(hora.substr(3,2))
+const segundos=Number(hora.substr(6,2));
+
+const totaldias= dias+(meses*30)+(anos*365);
+const totalsegundos= (totaldias* 86400)+ (horas*3600)+(minutos*60)+segundos;
+
+document.write(`até o dia ${data} e ${hora} já vivemos ${totalsegundos}.`);
+</script>

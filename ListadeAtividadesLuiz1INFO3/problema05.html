@@ -1,0 +1,17 @@
+<script>
+    /*Problema 05: Desconto no preço
+Peça para o usuário informar o preço de um produto e também informar qual a porcentagem de desconto que será aplicado no preço do produto. Faça o cálculo do preço final do produto após aplicar a porcentagem de desconto e apresente o resultado.
+*/
+
+//ENTRADA
+const precoinicial = prompt(`informe o preco do produto:`);
+const porcentagem = prompt(`informe a porcentagem do desconto:`);
+
+//PROCESSAMENTO
+const multiplicacao = Number(precoinicial) * Number(porcentagem);
+const divisao = multiplicacao / 100
+const precofinal = Number(precoinicial) - divisao
+
+//SAIDA
+alert (`o valor final do produto e ${precofinal}`);
+</script>
